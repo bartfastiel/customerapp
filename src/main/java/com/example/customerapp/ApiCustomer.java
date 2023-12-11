@@ -1,9 +1,8 @@
 package com.example.customerapp;
 
-public record Customer(
+public record ApiCustomer(
         String id,
         String firstName,
-        String lastName,
-        String password
-) {
+        String lastName
+        ) {
 }
