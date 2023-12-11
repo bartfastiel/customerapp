@@ -12,11 +12,11 @@ import java.util.List;
 @RequiredArgsConstructor
 public class CustomerController {
 
-    private final CustomerRepository repo;
+    private final CustomerService service;
 
     @GetMapping
     List<Customer> findAll() {
-        return repo.findAll();
+        return service.findAll();
     }
 
 }
